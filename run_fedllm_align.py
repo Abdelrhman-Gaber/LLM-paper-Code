@@ -1,4 +1,3 @@
-# run_fedllm_align.py
 from dataclasses import asdict
 
 from config import FLConfig
