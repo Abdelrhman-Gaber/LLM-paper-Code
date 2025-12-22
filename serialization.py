@@ -1,4 +1,3 @@
-# serialization.py
 import random
 from config import FRAMINGHAM_FEATURES, TARGET_COL
 
