@@ -1,4 +1,3 @@
-# run_all_baselines.py
 import pandas as pd
 
 from config import FLConfig
