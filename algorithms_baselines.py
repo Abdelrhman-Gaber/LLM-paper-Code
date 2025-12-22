@@ -1,4 +1,3 @@
-# algorithms_baselines.py
 from typing import List, Dict, Tuple
 
 import numpy as np
