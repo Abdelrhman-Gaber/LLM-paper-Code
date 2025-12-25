@@ -1232,16 +1232,3 @@ def run_tsne_visualization(
     plt.grid(True, alpha=0.3)
     plt.show()
 
-
-
-
-if __name__ == "__main__":
-    # Make sure Config.data_path is correct before running.
-    print("\nRunning main experiment...")
-    main_results_df = run_main_experiment()
-
-    # Optional additional experiments:
-    backbone_results_df = run_backbone_comparison()
-    serialization_results_df = run_serialization_comparison()
-    overlap_results_df = run_schema_overlap_stress_test()
-    run_tsne_visualization()
