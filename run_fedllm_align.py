@@ -49,11 +49,3 @@ def run_single_experiment(
     return history, global_model, f1_global, report, model_size_kb
 
 
-if __name__ == "__main__":
-    csv_path = "framingham.csv"  # adjust path
-    run_single_experiment(
-        csv_path=csv_path,
-        num_clients=3,
-        backbone="distilbert",
-        serialization_format="structured",
-    )
