@@ -139,7 +139,3 @@ def run_suite(csv_path: str, num_clients_list=(3, 5, 10)):
     }
     plot_accuracy_vs_comm(points)
 
-
-if __name__ == "__main__":
-    csv_path = "framingham.csv"
-    run_suite(csv_path)
