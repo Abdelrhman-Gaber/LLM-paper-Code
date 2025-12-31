@@ -38,9 +38,6 @@ def _fedavg(weights_list: List[Dict[str, torch.Tensor]]) -> Dict[str, torch.Tens
     return avg
 
 
-# ------------------------------------------------------------------
-# FedAvg (tabular)
-# ------------------------------------------------------------------
 
 def train_fedavg_tabular(
     clients: List[TabularClient],
@@ -84,9 +81,6 @@ def train_fedavg_tabular(
     return history, global_model
 
 
-# ------------------------------------------------------------------
-# FedProx baseline (tabular)
-# ------------------------------------------------------------------
 
 def train_fedprox(
     clients: List[TabularClient],
@@ -141,9 +135,6 @@ def train_fedprox(
     return history, global_model
 
 
-# ------------------------------------------------------------------
-# SCAFFOLD baseline (tabular)
-# ------------------------------------------------------------------
 
 def train_scaffold(
     clients: List[TabularClient],
@@ -222,9 +213,6 @@ def train_scaffold(
     return history, global_model
 
 
-# ------------------------------------------------------------------
-# Clustered FL (simplified)
-# ------------------------------------------------------------------
 
 from sklearn.cluster import KMeans
 
@@ -396,9 +384,6 @@ def train_fedxgboost_central(
     return f1, report, model_size_kb
 
 
-# ------------------------------------------------------------------
-# MI-driven baseline (approximate)
-# ------------------------------------------------------------------
 
 def train_mi_baseline(
     X_clients: List[np.ndarray],
